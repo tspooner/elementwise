@@ -1,19 +1,16 @@
 [package]
 name = "elementwise"
-description = ""
+description = "Elementwise operations implemented for standard Rust containers"
 
-version = "0.0.0"
+version = "0.1.0"
 authors = ["Tom Spooner <spooner10000@gmail.com>"]
 
 license = "MIT"
 readme = "README.md"
 
-keywords = []
+keywords = ["numerics", "mathematics"]
 
 repository = "https://github.com/tspooner/elementwise"
 documentation = "https://docs.rs/elementwise"
 
 edition = "2018"
-
-[dependencies]
-num-traits = "0.2"
