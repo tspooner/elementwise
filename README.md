@@ -7,7 +7,7 @@
 ## Installation
 ```toml
 [dependencies]
-elementwise = "0.2"
+elementwise = "0.3"
 ```
 
 ## Contributing
