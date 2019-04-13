@@ -10,6 +10,10 @@ pub use self::array::*;
 mod tuple;
 pub use self::tuple::*;
 
+#[macro_use]
+mod identity;
+pub use self::identity::*;
+
 macro_rules! new_trait {
     ($ot:ident.$om:ident => $nt:ident.$nm:ident) => {
         pub trait $nt<RHS = Self> {
