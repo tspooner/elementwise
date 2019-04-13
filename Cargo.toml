@@ -1,0 +1,19 @@
+[package]
+name = "elementwise"
+description = ""
+
+version = "0.0.0"
+authors = ["Tom Spooner <spooner10000@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+
+keywords = []
+
+repository = "https://github.com/tspooner/elementwise"
+documentation = "https://docs.rs/elementwise"
+
+edition = "2018"
+
+[dependencies]
+num-traits = "0.2"
