@@ -5,18 +5,6 @@ use std::{
     ptr,
 };
 
-macro_rules! new_trait {
-    ($ot:ident.$om:ident => $nt:ident.$nm:ident) => {
-        pub trait $nt<RHS = Self> {
-            fn $nm(&self, other: &RHS) -> Self;
-        }
-
-        impl_collection!($ot.$om => $nt.$nm);
-        impl_array!($ot.$om => $nt.$nm);
-        impl_tuple!($ot.$om => $nt.$nm);
-    };
-}
-
 new_trait!(Add.add => ElementwiseAdd.elementwise_add);
 new_trait!(Div.div => ElementwiseDiv.elementwise_div);
 new_trait!(Mul.mul => ElementwiseMul.elementwise_mul);
@@ -24,14 +12,7 @@ new_trait!(Rem.rem => ElementwiseRem.elementwise_rem);
 new_trait!(Shl.shl => ElementwiseShl.elementwise_shl);
 new_trait!(Shr.shr => ElementwiseShr.elementwise_shr);
 new_trait!(Sub.sub => ElementwiseSub.elementwise_sub);
-
-pub trait ElementwiseNeg {
-    fn elementwise_neg(&self) -> Self;
-}
-
-impl_collection_unary!(Neg.neg => ElementwiseNeg.elementwise_neg);
-impl_array_unary!(Neg.neg => ElementwiseNeg.elementwise_neg);
-impl_tuple_unary!(Neg.neg => ElementwiseNeg.elementwise_neg);
+new_trait_unary!(Neg.neg => ElementwiseNeg.elementwise_neg);
 
 #[cfg(test)]
 mod tests {

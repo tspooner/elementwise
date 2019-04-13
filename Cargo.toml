@@ -19,3 +19,4 @@ edition = "2018"
 default = ["arithmetic"]
 
 arithmetic = []
+logical = []
