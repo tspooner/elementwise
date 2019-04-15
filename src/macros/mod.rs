@@ -6,6 +6,13 @@ pub use self::collection::*;
 mod array;
 pub use self::array::*;
 
+#[cfg(feature = "ndarray")]
+#[macro_use]
+mod ndarray;
+
+#[cfg(feature = "ndarray")]
+pub use self::ndarray::*;
+
 #[macro_use]
 mod tuple;
 pub use self::tuple::*;

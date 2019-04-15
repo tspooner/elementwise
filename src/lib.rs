@@ -1,3 +1,6 @@
+#[cfg(feature = "ndarray")]
+extern crate ndarray;
+
 #[macro_use]
 pub(crate) mod macros;
 
