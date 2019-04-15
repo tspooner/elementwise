@@ -2,7 +2,7 @@
 name = "elementwise"
 description = "Elementwise operations implemented for standard Rust containers"
 
-version = "0.3.1"
+version = "0.3.2"
 authors = ["Tom Spooner <spooner10000@gmail.com>"]
 
 license = "MIT"
@@ -16,7 +16,7 @@ documentation = "https://docs.rs/elementwise"
 edition = "2018"
 
 [features]
-default = ["arithmetic", "ndarray"]
+default = ["arithmetic"]
 
 arithmetic = []
 logical = []
