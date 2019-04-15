@@ -2,7 +2,7 @@
 name = "elementwise"
 description = "Elementwise operations implemented for standard Rust containers"
 
-version = "0.3.0"
+version = "0.3.1"
 authors = ["Tom Spooner <spooner10000@gmail.com>"]
 
 license = "MIT"
